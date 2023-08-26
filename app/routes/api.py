@@ -94,6 +94,8 @@ def upvote():
 
     db.add(newVote)
     db.commit()
+
+    
   except:
     print(sys.exc_info()[0])
 
