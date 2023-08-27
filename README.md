@@ -60,7 +60,7 @@ Thank you for considering contributing to Just Tech News! Your contributions are
 
 ## Links
 - Repository: [GitHub](https://github.com/kemcclen/python-newsfeed)
-- Deployed Application: [Heroku](https://just-the-technews-e7c8d6309325.herokuapp.com/dashboard/edit/1)
+- Deployed Application: [Heroku](https://just-the-technews-e7c8d6309325.herokuapp.com/)
 
 ## Technologies
 - Flask
