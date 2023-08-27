@@ -1,10 +1,8 @@
 from datetime import datetime
 from app.db import Base
-from .Vote import Vote
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, select, func
 from sqlalchemy.orm import relationship
-# , column_property
-# from sqlalchemy.ext.hybrid import hybrid_property
+
 
 
 class Post(Base):
@@ -17,28 +15,6 @@ class Post(Base):
   updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
   user = relationship('User')
   comments = relationship('Comment', cascade='all,delete')
-  votes = relationship('Vote', cascade='all,delete')
-  def vote_count(self):
-    return len(self.votes)
-
-    
-#   def vote_count(cls):
-#     return (
-#         select([func.count(Vote.id)])
-#         .where(Vote.post_id == cls.id)
-#         .label("vote_count")
-#     )
-
-# def vote_count(self):
-#         return self.votes.count()
-
-# def vote_count(cls):
-#     return (select([func.count(Vote.id)])
-#             .where(Vote.post_id == cls.id)
-#                 .label('vote_count'))
-
-#   vote_count = column_property(
-#     select([func.count(Vote.id)]).where(Vote.post_id == id)
-#   )
+  
  
  
