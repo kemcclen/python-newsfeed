@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background-color: #121212;
 }
 
 body, html {
@@ -12,28 +13,28 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #3f84e4;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 
 a:hover {
-  color: #3486eb;
+  text-decoration: underline;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #2f65af;
   border: 0;
   padding: 1%;
   color: white;
   font-weight: bold;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
   cursor: pointer;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #4283dd;
 }
 
 .post-list {
@@ -42,14 +43,14 @@ button:hover {
 }
 
 textarea, input {
-  padding: .5%;
+  padding: 0.5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #3f84e4;
 }
 
 textarea {
@@ -63,6 +64,10 @@ form > div {
 
 form label {
   display: block;
+}
+
+label, h2, span, footer, ol {
+  color: #ccc;
 }
 
 .wrapper {
@@ -97,24 +102,24 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #3f84e4;
   font-size: 100%;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
   margin-left: 16px;
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #3f84e4;
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #990e0e;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #ca4f30;
 }
 
 .post {
@@ -134,12 +139,12 @@ main {
 }
 
 .upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
+  background-color: #11580a;
+  transition: background-color 0.1s;
 }
 
 .upvote-btn:hover {
-  background-color: #1f9c13;
+  background-color: #197a10;
 }
 
 .comment-form {
@@ -151,14 +156,18 @@ main {
   margin-bottom: 1%;
 }
 
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
-}
-
 .comment .meta {
   font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.text {
+  color: #b3b3b3;
+}
+
+textarea, input {
+  color: #b3b3b3;
 }
 
 .new-post-form input {
@@ -175,4 +184,13 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+.header {
+  color: #b3b3b3;
+  font-size: 28px;
+}
+
+.meta {
+  color: #b3b3b3;
 }
